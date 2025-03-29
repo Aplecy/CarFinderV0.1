@@ -1,6 +1,13 @@
 #ADDED ALLOWED VEHICLES
 AllowedVehiclesList = [ 'Ford F-150', 'Chevrolet Silverado', 'Tesla CyberTruck', 'Toyota Tundra', 'Nissan Titan' ]
 
+#create a option to call for the list
+def Input1():
+    print("hi")
+
+#create an option to exit the menu
+def Input2():
+    print("Thank you for using the AutoCountry Vehicle Finder, good-bye!")
 
 #create a defined menu for AutoCountry
 def menu():
