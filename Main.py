@@ -1,15 +1,18 @@
-#ADDED ALLOWED VEHICLES
+#ADDED SET OF ALLOWED VEHICLES
 AllowedVehiclesList = [ 'Ford F-150', 'Chevrolet Silverado', 'Tesla CyberTruck', 'Toyota Tundra', 'Nissan Titan' ]
 
-#create a option to call for the list
+#create a defined option to call for the list then returns to menu
 def Input1():
-    print("hi")
-
-#create an option to exit the menu
+    print("The AutoCountry sales manager has authorized the purchase and selling of the following vehicles:")
+    for vehicles in AllowedVehiclesList:
+        print (vehicles)
+    print("")
+    menu()
+#create an defined option to exit the menu
 def Input2():
     print("Thank you for using the AutoCountry Vehicle Finder, good-bye!")
 
-#create a defined menu for AutoCountry
+#create a defined menu for AutoCountry with options to show authorized vehicles and option to exit
 def menu():
     print("********************************")
     print("AutoCountry Vehicle Finder V.01")
@@ -25,4 +28,3 @@ def menu():
         Input2()    
 
 menu()
-
